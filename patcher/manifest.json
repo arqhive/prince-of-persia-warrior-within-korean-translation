@@ -1,0 +1,9 @@
+{
+  "version": "0.7.0",
+  "game_id": "G2OE41",
+  "revision": 0,
+  "iso_size": 1459978240,
+  "source_sha256": "080dff9376ef023697679996c38ffcd9025945c4ea195e04601e4dbfbf9e9b2e",
+  "result_sha256": "4092d53a63bad00e4f830de581bbd596caa5434dcd5e086e98b8aa14af67fec6",
+  "patch_sha256": "0b6581b436c01ae52c1bedf6dd6116c09128959c54a30069b823f17ee570cbcb"
+}
