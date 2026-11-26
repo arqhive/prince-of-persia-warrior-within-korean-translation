@@ -1,4 +1,4 @@
 id=G2OE41
 rev=0
-version=1.0
+version=0.9
 disc_size=1459978240

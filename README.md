@@ -1,8 +1,8 @@
 # 페르시아의 왕자 전사의 길 (GC) 한글 패치
 
-게임큐브 북미판 *Prince of Persia: Warrior Within* (`G2OE41` 리비전 0)용 비공식 한국어 패치입니다.
+게임큐브 북미판 *Prince of Persia: Warrior Within* (`G2OE41`)용 비공식 한국어 패치입니다.
 
-첫 릴리즈 **[v1.0](https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/releases/tag/v1.0)** · [릴리즈 안내](release/v1.0.md)
+첫 릴리즈 **[v0.9](https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/releases/tag/v0.9)** · [릴리즈 안내](release/v0.9.md)
 
 - 오프닝과 게임 중 대사 자막 350줄에 한국어를 적용했습니다. 자막 표시 시간은 게임큐브판과 같습니다.
 - 메뉴, 메모리 카드, 조작 안내, 지도와 목표, 무기, 시간의 힘 설명을 한글화했습니다.
@@ -14,7 +14,7 @@
 
 ### 준비물
 
-- 북미판 게임큐브 원본 이미지 (`G2OE41` 리비전 0).
+- 북미판 게임큐브 원본 이미지 (`G2OE41`).
 - Windows 10 또는 11 64비트. 기본 Windows PowerShell과 ZIP에 동봉한 도구를 사용합니다.
 
 | 원본 형식 | 결과 | 비고 |
@@ -28,7 +28,7 @@
 
 ### 적용 방법
 
-1. [v1.0 릴리즈](https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/releases/tag/v1.0)에서 `G2OE_KPatch_v1.0.zip`을 받아 풉니다.
+1. [v0.9 릴리즈](https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/releases/tag/v0.9)에서 `G2OE_KPatch_v0.9.zip`을 받아 풉니다.
 2. 푼 폴더에 원본 이미지를 두고 `패치하기.bat`을 실행합니다. 원본 파일을 배치 파일 위로 끌어 놓아도 됩니다.
 3. 원본과 같은 폴더에서 파일명 끝에 ` (KOR)`가 붙은 이미지를 엽니다.
 

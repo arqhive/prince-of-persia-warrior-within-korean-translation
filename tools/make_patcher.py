@@ -120,7 +120,7 @@ def main():
     parser.add_argument("--xdelta", type=Path, required=True, help="Bundled xdelta3 executable")
     parser.add_argument("--out", type=Path, default=ROOT / "release")
     args = parser.parse_args()
-    version = "1.0"
+    version = "0.9"
     name = f"G2OE_KPatch_v{version}"
     output = args.out.resolve()
     output.mkdir(parents=True, exist_ok=True)

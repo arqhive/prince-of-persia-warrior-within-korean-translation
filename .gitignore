@@ -3,8 +3,8 @@
 /extract/
 /build/
 /release/*
-!/release/v1.0.md
-!/release/SHA256SUMS_v1.0.txt
+!/release/v0.9.md
+!/release/SHA256SUMS_v0.9.txt
 /.venv/
 /.cache/
 /[0-9]차*/
