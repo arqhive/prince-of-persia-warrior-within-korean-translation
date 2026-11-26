@@ -2,7 +2,9 @@
 /input/
 /extract/
 /build/
-/release/
+/release/*
+!/release/v1.0.md
+!/release/SHA256SUMS_v1.0.txt
 /.venv/
 /.cache/
 /[0-9]차*/
@@ -30,3 +32,4 @@ __pycache__/
 *.zip
 *.png
 *.jpg
+!/patcher/data/*.xdelta

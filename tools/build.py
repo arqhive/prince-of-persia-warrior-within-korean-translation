@@ -109,30 +109,26 @@ def verify_subtitles(original, output, inventory, dialogue, glyphs):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("original", type=Path, help="Verified G2OE41 revision 0 ISO")
-    parser.add_argument("output", type=Path, help="New ISO path")
+    parser.add_argument("original", type=Path, help="Original G2OE41 revision 0 ISO")
+    parser.add_argument("output_dir", type=Path, nargs="?", default=ROOT / "build", help="Output directory")
     parser.add_argument("--font", type=Path, required=True, help="Local Warhaven Regular font file")
     args = parser.parse_args()
-    manifest = read_json(ROOT / "patcher" / "manifest.json")
-    with args.original.open("rb") as stream:
-        original_hash = hashlib.file_digest(stream, "sha256").hexdigest()
-    if original_hash != manifest["source_sha256"]:
-        parser.error("Original ISO SHA-256 differs from the verified G2OE41 image")
-    if args.output.exists():
-        parser.error(f"Output already exists: {args.output}")
+    if args.original.suffix.lower() not in (".iso", ".gcm") or args.original.stem.endswith(" (KOR)"):
+        parser.error("Use an original ISO or GCM image")
+    output = args.output_dir / f"{args.original.stem} (KOR){args.original.suffix}"
     menu, inventory, fonts = read_disc(args.original, read_json(TRANSLATIONS / "menu.json"))
     system = {
         int(key, 16): {int(i): text for i, text in rows.items()}
         for key, rows in read_json(TRANSLATIONS / "system.json").items()
     }
     dialogue = compile_dialogue(inventory, read_json(TRANSLATIONS / "dialogue.json"))
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    with TemporaryDirectory(prefix=".popww-build-", dir=args.output.parent) as stage:
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    with TemporaryDirectory(prefix=".popww-build-", dir=args.output_dir) as stage:
         temporary_iso = Path(stage) / "korean.iso"
         glyphs = build(args.original, temporary_iso, inventory, fonts, menu, system, dialogue, args.font)
         verify_subtitles(args.original, temporary_iso, inventory, dialogue, glyphs)
-        temporary_iso.rename(args.output)
-    with args.output.open("rb") as stream:
+        temporary_iso.replace(output)
+    with output.open("rb") as stream:
         print(f"SHA-256 {hashlib.file_digest(stream, 'sha256').hexdigest()}")
 
 
