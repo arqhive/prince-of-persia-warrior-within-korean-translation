@@ -2,7 +2,7 @@
 
 게임큐브 북미판 *Prince of Persia: Warrior Within* (`G2OE41` 리비전 0)용 비공식 한국어 패치입니다.
 
-첫 릴리즈 **v1.0** · [릴리즈 안내](release/v1.0.md)
+첫 릴리즈 **[v1.0](https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/releases/tag/v1.0)** · [릴리즈 안내](release/v1.0.md)
 
 - 오프닝과 게임 중 대사 자막 350줄에 한국어를 적용했습니다. 자막 표시 시간은 게임큐브판과 같습니다.
 - 메뉴, 메모리 카드, 조작 안내, 지도와 목표, 무기, 시간의 힘 설명을 한글화했습니다.
@@ -28,7 +28,7 @@
 
 ### 적용 방법
 
-1. 패치 ZIP `G2OE_KPatch_v1.0.zip`을 풉니다.
+1. [v1.0 릴리즈](https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/releases/tag/v1.0)에서 `G2OE_KPatch_v1.0.zip`을 받아 풉니다.
 2. 푼 폴더에 원본 이미지를 두고 `패치하기.bat`을 실행합니다. 원본 파일을 배치 파일 위로 끌어 놓아도 됩니다.
 3. 원본과 같은 폴더에서 파일명 끝에 ` (KOR)`가 붙은 이미지를 엽니다.
 
@@ -36,7 +36,10 @@
 
 ### 실행 환경
 
-Dolphin에서 확인했습니다. 영어 언어 설정에서 한글이 표시됩니다. 자막을 켜려면 **옵션 → 화면 → 자막 → 예**를 선택하세요.
+- Dolphin
+- Wii U + Nintendont. UWUVCI 주입 테스트도 확인했습니다.
+
+영어 언어 설정에서 한글이 표시됩니다. 자막을 켜려면 **옵션 → 화면 → 자막 → 예**를 선택하세요.
 
 ### 알려진 한계
 

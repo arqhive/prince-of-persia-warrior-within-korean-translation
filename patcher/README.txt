@@ -48,6 +48,7 @@
 [실행]
 
   - Dolphin에서 확인했습니다.
+  - Wii U + Nintendont에서 실행과 UWUVCI 주입을 확인했습니다.
   - 게임 언어를 영어로 설정해야 한글이 표시됩니다.
   - 대사 자막은 「옵션 → 화면 → 자막 → 예」에서 켭니다.
 
@@ -70,14 +71,18 @@
 
   Wiimms ISO Tools 3.05a r8638 및 Cygwin 구성요소
     https://wit.wiimm.de/download.html
+    Wiimms ISO Tools 소스: https://download.wiimm.de/source/wiimms-iso-tools/
+    Cygwin 소스 패키지: https://cygwin.com/packages/
     GPL 본문은 bin\wit-gpl-2.0.txt에 있습니다.
   xdelta3 3.1.0 (xdelta-gpl 배포본)
     https://github.com/jmacd/xdelta-gpl/releases/tag/v3.1.0
+    소스: https://github.com/jmacd/xdelta-gpl/tree/v3.1.0
 
 
 [제보·문의]
 
-  프로젝트의 GitHub 이슈에 발생 화면, 원본 이미지 형식, 실행 환경과 오류 문구를 알려 주세요.
+  발생 화면, 원본 이미지 형식, 실행 환경과 오류 문구를 알려 주세요.
+  https://github.com/arqhive/prince-of-persia-warrior-within-korean-translation/issues
 
 
 [면책조항]
